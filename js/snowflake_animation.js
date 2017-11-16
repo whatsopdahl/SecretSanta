@@ -1,7 +1,7 @@
 $( document ).ready( function() {
 	//get all addressess of snowflakes we want to use
 	var addresses = [];
-	var root = "../snowflakes/";
+	var root = "snowflakes/";
 	//iterate over items in images/rsz_png file
 	addresses.push(root + "rsz_circle31.png");
 	addresses.push(root + "rsz_cross40.png");
