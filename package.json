@@ -1,0 +1,24 @@
+{
+  "name": "secretsanta",
+  "version": "1.0.0",
+  "description": "A pure web client that generates secret santa lists.",
+  "main": "index.html",
+  "private": "true",
+  "scripts": {
+    "test": "\"echo \\\"no tests exist\\\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatsopdahl/SecretSanta.git"
+  },
+  "author": "Jon Opdahl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whatsopdahl/SecretSanta/issues"
+  },
+  "homepage": "https://github.com/whatsopdahl/SecretSanta#readme",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "materialize-css": "^0.100.2"
+  }
+}

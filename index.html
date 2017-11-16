@@ -1,0 +1,66 @@
+<!doctype html5>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Secret Santa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link src="snowflakes/rsz_flake.png" rel="icon" type="image/x-icon"/>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- proprietary scripts and styles -->
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/snowflake_animation.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+  </head>
+  <body>
+    <style id="print-style">
+    </style>
+    <div class="container">
+      <h1 class="title">Secret Santa</h1>
+      <div id="main-content" class="container">
+        <div class="row">
+          <div class="col s12">
+            <h4 class="center-align">Who's playing?</h4>
+            <p class="center-align">Enter the participants, then click 'submit' to generate your secret santa list!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="participant-container" class="col s12">
+            <div class="row">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="p1" class="participant" type="text">
+                <label for="p1">Participant 1</label>
+              </div>
+              <div id="btn-container" class="col s2 center-align">
+                <button id="add-btn" title="Add Participant" class="btn btn-floating waves-effect waves-light"><i class="material-icons">add</i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer container">
+        <div clas="row">
+          <div class="col s12 right-align">
+            <button title="Reset all fields" id="reset-btn" class="btn waves-effect waves-light red lighten-2">Reset</button>
+            <button title="Generate Secret Santa List" id="generate-btn" class="btn waves-effect waves-light">Generate List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="results-modal" class="modal modal-fixed-footer">
+      <div class="modal-content">
+      </div>
+      <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+  </body>
+</html>

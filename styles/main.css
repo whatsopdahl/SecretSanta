@@ -1,0 +1,77 @@
+body,html {
+  height : 100%;
+  width : 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h1 {
+  color : white;
+}
+
+#main-content {
+  background-color : rgba(255,255,255,.75);
+  border-radius: 5px;
+  position : relative;
+}
+
+#preloader-overlay {
+  position : absolute;
+  top : 0;
+  left : 0;
+  height : 100%;
+  width : 100%;
+  border-radius : inherit;
+  background-color : inherit;
+  z-index : 1;
+}
+
+.dead-center {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.row {
+  margin-left: auto !important;
+}
+
+@keyframes animate-snowflake {
+  0% {
+    opacity : 1;
+    top : 0%;
+    transform: rotate(0deg) translateY(0);
+    -webkit-transform : rotate(0deg) translateY(0);
+    -moz-transform : rotate(0deg) translateY(0);
+    -o-transform : rotate(0deg) translateY(0);
+  }
+  100% {
+    bottom : 100%;
+    opacity: 1;
+    transform : rotate(720deg) translateY(-100%);
+    -webkit-transform : rotate(720deg) translateY(-100%);
+    -moz-transform : rotate(720deg) translateY(-100%);
+    -o-transform : rotate(720deg) translateY(-100%);
+  }
+}
+
+.snowflake{
+  position : absolute;
+  opacity : 0;
+  animation-name : animate-snowflake;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  -webkit-animation-name : animate-snowflake;
+  -webkit-animation-iteration-count : infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name : animate-snowflake;
+  -moz-animation-iteration-count : infinite;
+  -moz-animation-timing-function: linear;
+
+  -o-animation-name : animate-snowflake;
+  -o-animation-iteration-count : infinite;
+  -o-animation-timing-function: linear;
+}
