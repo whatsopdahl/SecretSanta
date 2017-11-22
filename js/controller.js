@@ -147,10 +147,13 @@ $(document).ready(function () {
 
   function downloadFiles(results) {
     return new Promise( (resolve, reject) => {
+      let master = "| Santa\t\t| Recipient \t\t|\n";
       for (let santa in results) {
         let content = "You are "+results[santa]+"'s secret santa!";
+        master += "| "+santa+"\t\t| "+results[santa]+"\t\t|\n";
         download(santa, content);
       }
+      download("master", master);
       resolve();
     });
   }
